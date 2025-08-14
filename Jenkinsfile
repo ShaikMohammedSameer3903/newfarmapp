@@ -10,7 +10,7 @@ pipeline {
 
         stage('Build & Run with Docker Compose') {
             steps {
-                sh '''
+                bat '''
                     docker-compose down
                     docker-compose build
                     docker-compose up -d
